@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Education Admin Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background:#f4f6f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar{
+            height:100vh;
+            background:#1e293b;
+            color:white;
+            padding:20px;
+        }
+
+        .sidebar h3{
+            font-size:22px;
+            margin-bottom:30px;
+        }
+
+        .sidebar a{
+            display:block;
+            color:#cbd5e1;
+            text-decoration:none;
+            padding:10px;
+            border-radius:6px;
+            margin-bottom:10px;
+        }
+
+        .sidebar a:hover{
+            background:#334155;
+            color:white;
+        }
+
+        .topbar{
+            background:white;
+            padding:15px 20px;
+            border-bottom:1px solid #ddd;
+        }
+
+        .card-box{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .table-box{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            margin-top:20px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .badge-status{
+            padding:5px 10px;
+            border-radius:20px;
+            font-size:12px;
+        }
+
+        .active-status{
+            background:#d1fae5;
+            color:#065f46;
+        }
+
+        .pending-status{
+            background:#fef3c7;
+            color:#92400e;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-md-2 sidebar">
+            <h3>Edu Admin</h3>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Students</a>
+            <a href="#">Teachers</a>
+            <a href="#">Courses</a>
+            <a href="#">Attendance</a>
+            <a href="#">Results</a>
+            <a href="#">Settings</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-10 p-0">
+
+            <!-- Topbar -->
+            <div class="topbar d-flex justify-content-between align-items-center">
+                <h4 class="m-0">Dashboard</h4>
+
+                <div>
+                    <span class="me-3">Admin</span>
+                    <button class="btn btn-primary btn-sm">Logout</button>
+                </div>
+            </div>
+
+            <!-- Dashboard Content -->
+            <div class="p-4">
+
+                <!-- Cards -->
+                <div class="row g-4">
+
+                    <div class="col-md-3">
+                        <div class="card-box">
+                            <h6>Total Students</h6>
+                            <h2>1,250</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card-box">
+                            <h6>Total Teachers</h6>
+                            <h2>75</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card-box">
+                            <h6>Courses</h6>
+                            <h2>18</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card-box">
+                            <h6>Pending Fees</h6>
+                            <h2>45</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Student Table -->
+                <div class="table-box">
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5>Recent Students</h5>
+
+                        <button class="btn btn-success btn-sm">
+                            Add Student
+                        </button>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Course</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>101</td>
+                                    <td>Rahul Sharma</td>
+                                    <td>BCA</td>
+                                    <td>
+                                        <span class="badge-status active-status">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>102</td>
+                                    <td>Priya Patil</td>
+                                    <td>BSc IT</td>
+                                    <td>
+                                        <span class="badge-status pending-status">
+                                            Pending
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>103</td>
+                                    <td>Aman Verma</td>
+                                    <td>MCA</td>
+                                    <td>
+                                        <span class="badge-status active-status">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>104</td>
+                                    <td>Sneha Joshi</td>
+                                    <td>BBA</td>
+                                    <td>
+                                        <span class="badge-status active-status">
+                                            Active
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>104</td>
+                                    <td>Sneha Joshi</td>
+                                    <td>BBA</td>
+                                    <td>
+                                        <span class="badge-status ">
+                                            Reactive
+                                        </span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
