@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" data-theme="a">  
+        <div data-role="header">
+            <h1>jQuery Mobile</h1>
+        </div>
+<div data-role="content">
+  <ul data-role="listview" data-inset="true" data-devidertheme="b">
+    <li data-role="list-divider">Divider</li>
+    <li><a href="#"><img src="https://en.wikipedia.org/wiki/Food" alt=""></a></li>
+    <li><a href="#">Audi</a></li>
+    <li><a href="#">BMW</a></li>
+    <li><a href="#">Cadillac</a></li>
+    <li><a href="#">Ferrari</a></li>
+   
+
+  </ul>
+</div>
+<form >
+    <!-- Text Input -->
+    <div class="ui-field-contain">
+        <label for="text-input">Name:</label>
+        <input type="text" name="text-input" id="text-input" placeholder="John Doe">
+    </div>
+
+    <!-- Search Box -->
+    <div class="ui-field-contain">
+        <label for="search-input">Search Query:</label>
+        <input type="search" name="search-input" id="search-input" placeholder="Type to search...">
+    </div>
+
+    <!-- Select Menu -->
+    <div class="ui-field-contain">
+        <label for="select-choice" class="select">Choose Option:</label>
+        <select name="select-choice" id="select-choice">
+            <option value="standard">Standard Shipping</option>
+            <option value="rush">Rush Shipping</option>
+        </select>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b">Submit Form</button>
+</form>
+
+<div data-role="footer">
+            <h1>&copy; 2023 jQuery Mobile</h1>
+        </div>
+
+    </div>
+    
+</body>
+</html>
